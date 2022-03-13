@@ -152,3 +152,4 @@ $$
 
 **3.其他**  
 这个vscode里mk真的是拉胯啊，长公式没法换行，latex一些语法只能预览有效，输出成PDF乱码。。。。
+markdown源码和pdf请参见[tusha-github](https://github.com/tusha-github/blog/tree/master/01%20taylor_formula)。
