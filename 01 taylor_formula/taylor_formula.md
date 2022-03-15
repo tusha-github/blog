@@ -1,6 +1,6 @@
 [comment]:<> (作者：涂啥)
 [comment]:<> (联系方式：1343163818@qq.com)
-[comment]:<> (完成日期：2022.03.13)
+[comment]:<> (完成日期：2022.03.15)
 
 # <center>泰勒公式</center>
 ## 前言
@@ -139,6 +139,26 @@ $$
  +\frac{\partial^2f(x_0,y_0)}{\partial x\partial y}(x-x_0)(y-y_0) + \frac{\partial^2f(x_0,y_0)}{\partial y \partial x}(y-y_0)(x-x_0) + \frac{\partial^2 f(x_0,y_0)}{\partial y^2}(y-y_0)^2+\dots \tag{27-2}
 $$
 
+当使用矩阵的形式进行描述时，则有
+$$
+    g(x,y) = f(x_0, y_0) + \left[ \begin{matrix}
+	\frac{\partial f\left( x_0,y_0 \right)}{\partial x}&		0\\
+	0&		\frac{\partial f\left( x_0,y_0 \right)}{\partial y}\\
+\end{matrix} \right]\left[ \begin{array}{c}
+	x\\
+	y\\
+\end{array} \right]+\frac{1}{2!}\left[ \begin{array}{c}
+	x\\
+	y\\
+\end{array} \right] ^T\left[ \begin{matrix}
+	\frac{\partial ^2f\left( x_0,y_0 \right)}{\partial x^2}&		\frac{\partial ^2f\left( x_0,y_0 \right)}{\partial x\partial y}\\
+	\frac{\partial ^2f\left( x_0,y_0 \right)}{\partial y\partial x}&		\frac{\partial ^2f\left( x_0,y_0 \right)}{\partial y^2}\\
+\end{matrix} \right] \left[ \begin{array}{c}
+	x\\
+	y\\
+\end{array} \right]+\dots \tag{28}
+$$
+其中在控制中一阶导的矩阵形式成为雅克比矩阵$J$，二级导的矩阵形式为海森矩阵$H$，至于三元及以上函数的推导基本同上，不再赘述。
 
 
 
@@ -151,5 +171,5 @@ $$
 上面的内容是没有考虑余项的，因此严格意义上数学推导是不严谨。
 
 **3.其他**  
-这个vscode里mk真的是拉胯啊，长公式没法换行，latex一些语法只能预览有效，输出成PDF乱码。。。。
+这个vscode里mk真的是拉胯啊，长公式没法换行，latex一些语法只能预览有效，输出成PDF乱码（pdf里公式28是有问题，不知道该怎么解决）。
 markdown源码和pdf请参见[tusha-github](https://github.com/tusha-github/blog/tree/master/01%20taylor_formula)。
