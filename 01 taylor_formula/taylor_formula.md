@@ -142,8 +142,7 @@ $$
 当使用矩阵的形式进行描述时，则有
 $$
     g(x,y) = f(x_0, y_0) + \left[ \begin{matrix}
-	\frac{\partial f\left( x_0,y_0 \right)}{\partial x}&		0\\
-	0&		\frac{\partial f\left( x_0,y_0 \right)}{\partial y}\\
+	\frac{\partial f\left( x_0,y_0 \right)}{\partial x}&\frac{\partial f\left( x_0,y_0 \right)}{\partial y}\\
 \end{matrix} \right]\left[ \begin{array}{c}
 	x\\
 	y\\
@@ -171,5 +170,5 @@ $$
 上面的内容是没有考虑余项的，因此严格意义上数学推导是不严谨。
 
 **3.其他**  
-这个vscode里mk真的是拉胯啊，长公式没法换行，latex一些语法只能预览有效，输出成PDF乱码（pdf里公式28是有问题，不知道该怎么解决）。
+这个vscode里mk真的是拉胯啊，长公式没法换行，latex一些语法只能预览有效，输出成PDF乱码（~~pdf里公式28是有问题，不知道该怎么解决~~增加了墨滴社区生成的pdf正常）。
 markdown源码和pdf请参见[tusha-github](https://github.com/tusha-github/blog/tree/master/01%20taylor_formula)。
